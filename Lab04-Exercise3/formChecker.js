@@ -2,7 +2,6 @@ function checkInput()
 {
   if(quantityChecker() && usernameChecker() && passwordChecker() && shippingChecker())
   {
-    alert("231");
     return;
   }
   else
@@ -19,7 +18,6 @@ function quantityChecker()
   let stdQ = document.getElementById('stdNum').value;
   let dexQ = document.getElementById('deluexNum').value;
   let collectorQ = document.getElementById('collectorNum').value;
-
 
   if(isNaN(stdQ) || isNaN(dexQ) || isNaN(collectorQ))
   {
@@ -68,10 +66,12 @@ function passwordChecker()
 
 function shippingChecker()
 {
-  let ship = document.getElementsByName('choice').value;
-  if(ship.length < 1)
+  let shipping1 = document.getElementById("7day");
+  let shipping2 = document.getElementById("overNight");
+  let shipping3 = document.getElementById("3day");
+  if(shipping1.checked == false && shipping2.checked == false && shipping3.checked == false)
   {
-    alert("Choose an shipping option");
+    alert("Do not forget to choose shipping method");
     return false;
   }
   return true;
@@ -84,5 +84,7 @@ function clean()
   document.getElementById('collectorNum').value = "";
   document.getElementById('user').value = "";
   document.getElementById('pass').value = "";
-  document.getElementsByName('choice').checked = false;
+  document.getElementById('7day').checked = false;
+  document.getElementById('3day').checked = false;
+  document.getElementById('overNight').checked = false;
 }
