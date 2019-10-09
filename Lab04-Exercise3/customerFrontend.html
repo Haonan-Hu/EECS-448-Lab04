@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css"
+            rel="stylesheet"
+            type="text/css"/>
+    <title>Destiny2 ShadowKeep Shop page</title>
+  </head>
+  <body class="shop">
+    <h1 class="head">Destiny2 ShadowKeep!</h1>
+    <form action="customerBackend.php" method="post" onsubmit="checkInput()">
+
+          <div class="item">
+            <img src="std.jpg" class="std">
+            <span class="caption">Standard Edition $39.99</span><br>
+            <input type="text" class="inputStd" name="sNum" id="stdNum"><br><br><br>
+          </div>
+          <div class="item">
+            <img src="deluex.jpg" class="deluex">
+            <span class="caption1">Deluex Edition $59.99</span><br>
+            <input type="text" class="inputDeluex" name="dNum" id="deluexNum"><br><br><br>
+          </div>
+          <div class="item">
+            <img src="collector.jpg" class="collector">
+            <span class="caption2">Collector's Edition $199.99</span><br>
+            <input type="text" class="inputCollector" name="cNum" id="collectorNum"><br><br><br>
+          </div>
+
+
+          <div class="shop">
+            Shipping options: <br>
+            <input type="radio" name="choice" id="7day" value="Free 7 day" />
+            <label for="7day"> Free 7 day </label><br>
+
+            <input type="radio" name="choice" id="overNight" value="$50.00 over night" />
+            <label for="overNight"> $50.00 over night </label><br>
+
+            <input type="radio" name="choice" id="3day" value="$5.00 three day" />
+            <label for="3day"> $5.00 three day </label><br>
+          </div>
+
+          <div>
+          <p class="user">
+            Please Create an account in order to purchase<br>
+            Username: <input type="text" name="name" id="user"><br>
+            PassWord: &nbsp;<input type="text" name="pass" id="pass"><br>
+          </p>
+          </div>
+          <input type="submit" class="create" value="Create Account">
+          <button type="button" class="button" onclick="clean()">Reset</button>
+    </form>
+  </body>
+  <script src="formChecker.js" charset="utf-8"></script>
+</html>

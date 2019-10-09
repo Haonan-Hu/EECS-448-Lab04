@@ -1,0 +1,93 @@
+div.item
+{
+  vertical-align: top;
+  display: inline-block;
+}
+p.user
+{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+body.shop
+{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: : center;
+  background-attachment: fixed;
+}
+h1.head
+{
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+div.shop
+{
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  text-align: center;
+}
+img.std
+{
+  margin-left: 100px;
+  margin-top: 69px;
+  height: 486px;
+  width: 354px;
+}
+
+img.deluex
+{
+  margin-left: 100px;
+  margin-top: 69px;
+  height: 486px;
+  width: 354px;
+}
+img.collector
+{
+  margin-left: 100px;
+  margin-top: 69px;
+  height: 486px;
+  width: 400px;
+}
+span.caption
+{
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  margin-left: 180px;
+}
+span.caption1
+{
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  margin-left: 180px;
+}
+span.caption2
+{
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  margin-left: 180px;
+}
+input.inputStd
+{
+  margin-left: 180px;
+}
+input.inputDeluex
+{
+  margin-left: 180px;
+}
+input.inputCollector
+{
+  margin-left: 180px;
+}
+input.create
+{
+  margin-left: 650px;
+}
